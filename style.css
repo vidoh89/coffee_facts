@@ -1,0 +1,109 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+.main{
+    height:100vh;
+    width:100%;
+}
+.wrapper
+.slide{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.slide{
+    overflow:hidden;
+}
+.slide::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.4);
+    z-index:10;
+}
+.slide .images{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.slide .image-data{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    text-align:center;
+    width:100%;
+    z-index:100;
+}
+.image-data span.text{
+    font-size:14px;
+    color:antiquewhite;
+    padding:10px;
+    font-weight:600;
+}
+.image-data h2{
+    font-size:45px;
+    font-weight:600;
+    color:antiquewhite;
+}
+a.button{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:25px;
+    color:rgb(134, 89, 29);
+    background-color:antiquewhite;
+    text-decoration: none;
+    margin-top:25px;
+    transition: all 0.3s ease-in-out;
+}
+a.button:hover{
+    background-color:rgb(134, 89, 29);
+    color:antiquewhite;
+}
+/* swiper button */
+.swiper-button-next.nav-btn,
+.swiper-button-prev.nav-btn{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background:rgb(134, 89, 29);
+    text-align: center;
+
+}
+.nav-btn::before,
+.nav-btn::after{
+    font-size:25px;
+    color:antiquewhite;
+}
+.swiper-button-next{
+    right:50px;
+}
+.swiper-button-prev{
+    left:50px;
+}
+.swiper-pagination-bullet{
+    opacity:1;
+    height:12px;
+    width:12px;
+    background-color:antiquewhite;
+    
+}
+.swiper-pagination-bullet-active{
+    border:2px solid antiquewhite;
+    background-color:rgb(134, 89, 29);
+    
+}
+@media screen and(max-width:768px){
+    .nav-btn{
+        visibility:hidden;
+    }
+    .swiper-pagination-bullet{
+        visibility:visible;
+    }
+}

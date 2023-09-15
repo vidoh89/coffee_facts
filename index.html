@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Coffe Lovers</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link base stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Link for swipers -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header></header>
+    <!-- Navigation bar -->
+    <nav></nav>
+    <!-- Main section -->
+    <main>
+       
+      <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="images/img1.jpg" alt="image of coffee" class="images">
+            <div class="image-data">
+              <span class="text">Spilling the beans on coffee</span>
+              <h2>
+                Enjoy our top picks <br>
+                of popular coffee!
+              </h2>
+              <a href="#" class="button">Learn More</a>
+            </div>
+          
+            <div class="slide swiper">
+                <img src="images/img2.jpg" alt="coffee image"  class="images">
+                <div class="image-data">
+                    <span class="text">Taste as great as it smells!</span>
+                    <h2>
+                        Coffee with a great smell <br><span class="text">and</span> better taste.
+                    </h2>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="./images/img3.jpg" alt="image of coffee"  class="images">
+                    <div class="image-data">
+                        <span class="text">Coffee made with you in mind</span>
+                        <h2>
+                            Alluring and Fragrant<br>
+                            Coffee for everyone.
+                        </h2>
+                        <a href="#" class="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer></footer>
+    <script src = "./swiper-bundle.min.js";>
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
